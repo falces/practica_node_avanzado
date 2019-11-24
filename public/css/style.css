@@ -1,0 +1,35 @@
+.formulario{
+    padding: 10px;
+}
+
+footer{
+    width: 100%;
+}
+
+.container{
+    width: 100% !important;
+    max-width: inherit !important;
+}
+
+.mt-3{
+    margin-top: 3em !important;
+}
+.mt-5{
+    margin-top: 5em !important;
+}
+
+.text-muted {
+    color: #fff !important;
+}
+
+.list-group-item {
+    background-color: rgba(255,255,255,.5);
+}
+
+a {
+    color: #000;
+}
+
+header.masthead {
+    height: auto !important;
+}

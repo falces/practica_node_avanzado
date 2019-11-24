@@ -1,0 +1,16 @@
+<div>
+    <div class="list-group">
+        <a href="/anuncios?tag=&nombre=&start=0&limit=" class="list-group-item"><%= __('ALL CATEGORIES') %></a>
+        <%
+        if(typeof tags !== 'undefined'){
+            tags.forEach(tag => {
+            %>
+                <%
+                __append('<a href="/anuncios?tag=' + tag + '" class="list-group-item">' + tag.toUpperCase() + '</a>');
+                %>
+            <%
+            });
+        }
+        %>
+    </div>
+</div>

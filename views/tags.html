@@ -1,0 +1,35 @@
+<% include head.html %>
+<header class="masthead">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 mt-5">
+        <% include menu.html %>
+      </div>
+      <div class="col-lg-9 mt-3">
+          <div class="card" style="margin-top:15px;">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">NUESTRAS CATEGORÍAS</h5>
+              <p class="card-text">En NODEPOP podrás encontrar artículos de:</p>
+                <%
+                tags.forEach(tag => {
+                %>
+                <%
+                  __append('<a href="/anuncios?tag=' + tag + '" class="btn btn-primary">' + tag + '</a>');
+                %>
+                <%
+                });
+                %>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="row">
+    <% include footer.html %>
+  </div>
+</div>
